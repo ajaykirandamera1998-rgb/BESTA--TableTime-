@@ -1,0 +1,37 @@
+/* ==========================================================
+   BESTA — Animated logo intro (conic-sweep emblem reveal)
+   First screen shown on load. Scoped to #intro / .stage / #go.
+   ========================================================== */
+
+@property --a{syntax:'<angle>';inherits:false;initial-value:0deg}
+:root{--bg:#f8f2e2;--ink:rgb(80,54,47);box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#f8f2e2}}
+:root[data-theme="dark"]{--bg:#f8f2e2}
+#intro{position:fixed;inset:0;background:radial-gradient(ellipse at 50% 45%,#fbf7ea 0%,var(--bg) 55%,#efe4c9 100%);display:flex;align-items:center;justify-content:center;
+ padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);transition:opacity 1s ease,transform 1.2s cubic-bezier(.7,0,.2,1)}
+#intro.out{opacity:0;transform:translateY(-4%) scale(1.04);pointer-events:none}
+.stage{position:relative;width:min(86vw,560px,calc(78vh*1.241));aspect-ratio:360/290;margin-top:-4vh}
+.stage img{position:absolute;display:block;opacity:0;user-select:none;-webkit-user-drag:none}
+.emb{transform-origin:50% 50%}
+.play .emb{-webkit-mask-image:conic-gradient(from 0deg at 50% 50%,#000 var(--a),transparent calc(var(--a) + .4deg));mask-image:conic-gradient(from 0deg at 50% 50%,#000 var(--a),transparent calc(var(--a) + .4deg));
+ animation:sweep 2.2s cubic-bezier(.6,0,.25,1) .4s forwards,emb 2.6s cubic-bezier(.2,.7,.2,1) .4s forwards}
+.play .dot{animation:pop .9s cubic-bezier(.3,1.5,.5,1) calc(1.7s + var(--i)*.18s) forwards}
+.play .L{animation:rise 1.3s cubic-bezier(.2,.7,.15,1) calc(2.1s + var(--i)*.14s) forwards}
+.play .T{animation:fade 1s ease-out calc(3.5s + var(--i)*.055s) forwards}
+.rule{position:absolute;left:50%;top:81%;height:1px;width:0;background:var(--ink);opacity:.0}
+@keyframes sweep{from{--a:0deg}to{--a:361deg}}
+@keyframes emb{0%{opacity:1;transform:rotate(-30deg) scale(.8)}100%{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(0)}100%{opacity:1;transform:scale(1)}}
+@keyframes rise{0%{opacity:0;transform:translateY(22%);filter:blur(6px)}100%{opacity:1;transform:none;filter:blur(0)}}
+@keyframes fade{0%{opacity:0;transform:translateY(30%)}100%{opacity:1;transform:none}}
+#go{position:absolute;left:50%;bottom:calc(9vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:58px;height:58px;border-radius:50%;border:1.2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:background .35s,color .35s,transform .35s;-webkit-tap-highlight-color:transparent}
+#go svg{width:24px;height:24px;transition:transform .35s}
+.play #go{animation:btn 1s ease-out 4.9s forwards}
+.play #go svg{animation:nudge 2.2s ease-in-out 6s infinite}
+#go:hover,#go:focus-visible{background:var(--ink);color:var(--bg);outline:none}
+#go:hover svg{transform:translateX(4px);animation:none}
+@keyframes btn{to{opacity:1;pointer-events:auto}}
+@keyframes nudge{0%,60%,100%{transform:none}30%{transform:translateX(6px)}}
+@media (prefers-reduced-motion:reduce){.play *{animation-duration:.01s!important;animation-delay:0s!important}}
+
+#intro.out,#intro.out *{pointer-events:none!important}

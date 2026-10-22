@@ -1,0 +1,29 @@
+/* Policy pages (also shown inside the kiosk's policy viewer) */
+body.legal{ background:var(--cream); }
+.legal-header{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px 20px; padding:14px clamp(16px,5vw,48px); border-bottom:1px solid rgba(59,42,34,.18); background:var(--cream-deep); }
+.legal-brand{ display:flex; align-items:center; gap:12px; color:var(--espresso-ink); text-decoration:none; font-family:var(--font-display); font-size:19px; font-weight:600; }
+.legal-header nav{ display:flex; flex-wrap:wrap; gap:2px 16px; font-size:15px; }
+.legal-header nav a{ color:var(--espresso-ink); padding:8px 2px; display:inline-block; }
+.legal-header nav a[aria-current="page"]{ font-weight:700; text-decoration-thickness:2px; }
+.legal-main{ max-width:760px; margin:0 auto; padding:28px clamp(16px,5vw,32px) 48px; }
+.legal-main h1{ margin-bottom:6px; }
+.legal-main h2{ font-size:22px; margin:30px 0 8px; }
+.legal-main h3{ font-size:17px; margin:18px 0 6px; font-family:var(--font-body); }
+.legal-main p, .legal-main li{ font-size:16px; line-height:1.65; }
+.legal-main ul, .legal-main ol{ padding-left:22px; margin:0 0 1em; }
+.legal-main li{ margin-bottom:.4em; }
+.updated{ color:var(--muted); font-size:14px; margin-bottom:18px; }
+.summary{ background:var(--cream-deep); border-left:4px solid var(--gold); padding:14px 18px; border-radius:4px; margin:18px 0; }
+.summary p{ margin:0 0 .5em; }
+.summary p:last-child{ margin:0; }
+.table-wrap{ overflow-x:auto; margin:10px 0 18px; border:1px solid rgba(59,42,34,.2); border-radius:4px; }
+table{ border-collapse:collapse; width:100%; min-width:560px; font-size:15px; background:#fff; }
+th, td{ text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid rgba(59,42,34,.15); }
+th{ background:var(--cream-deep); font-size:14px; }
+tr:last-child td{ border-bottom:none; }
+.legal-footer{ border-top:1px solid rgba(59,42,34,.18); background:var(--cream-deep); padding:18px clamp(16px,5vw,48px); font-size:14px; color:var(--muted); text-align:center; }
+.legal-footer address{ font-style:normal; }
+.notfound{ min-height:60vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:14px; padding:32px 16px; }
+.framed .legal-home{ display:none; }
+.framed .legal-header{ position:static; }
+@media (max-width:600px){ .legal-main h2{ font-size:20px; } }
