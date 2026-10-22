@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Besta — The Indian Kitchen | Table Time and Dasara Arcade</title>
+<meta name="description" content="Play Table Time and Dasara Arcade while you wait at Besta — The Indian Kitchen, Guru Nanak Colony, Vijayawada.">
+<meta name="theme-color" content="#F4ECDD">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="games.css">
+<link rel="stylesheet" href="intro.css">
+</head>
+<body>
+<a class="skip-link" href="#screens">Skip to content</a>
+<!-- Icons: Font Awesome Free 6 (https://github.com/FortAwesome/Font-Awesome), licensed CC BY 4.0 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="fa-puzzle-piece" viewBox="0 0 512 512"><path d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8c0 12.8 10.4 23.2 23.2 23.2l56.8 0c26.5 0 48 21.5 48 48l0 56.8c0 12.8 10.4 23.2 23.2 23.2c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2c-12.8 0-23.2 10.4-23.2 23.2L384 464c0 26.5-21.5 48-48 48l-56.8 0c-12.8 0-23.2-10.4-23.2-23.2c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8c0 12.8-10.4 23.2-23.2 23.2L48 512c-26.5 0-48-21.5-48-48L0 343.2C0 330.4 10.4 320 23.2 320c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256C10.4 256 0 245.6 0 232.8L0 176c0-26.5 21.5-48 48-48l120.8 0c12.8 0 23.2-10.4 23.2-23.2z"/></symbol><symbol id="fa-gamepad" viewBox="0 0 640 512"><path d="M192 64C86 64 0 150 0 256S86 448 192 448l256 0c106 0 192-86 192-192s-86-192-192-192L192 64zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24l0 32 32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0 0 32c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-32-32 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l32 0 0-32z"/></symbol><symbol id="fa-gift" viewBox="0 0 512 512"><path d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"/></symbol><symbol id="fa-camera" viewBox="0 0 512 512"><path d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></symbol><symbol id="fa-image" viewBox="0 0 512 512"><path d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6l96 0 32 0 208 0c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></symbol><symbol id="fa-eye" viewBox="0 0 576 512"><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></symbol><symbol id="fa-medal" viewBox="0 0 512 512"><path d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0L133.9 0c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0L487.4 0C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/></symbol><symbol id="fa-trophy" viewBox="0 0 576 512"><path d="M400 0L176 0c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8L24 64C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9L192 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-26.1 0C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24L446.4 64c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112l84.4 0c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6l84.4 0c-5.1 66.3-31.1 111.2-63 142.3z"/></symbol><symbol id="fa-hand-pointer" viewBox="0 0 448 512"><path d="M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40l0 148.2c8.5-7.6 19.7-12.2 32-12.2c20.6 0 38.2 13 45 31.2c8.8-9.3 21.2-15.2 35-15.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48l0 48 0 16 0 48c0 70.7-57.3 128-128 128l-16 0-64 0-.1 0-5.2 0c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7L128 40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 96c0 8.8 7.2 16 16 16s16-7.2 16-16l0-96zm48-16c-8.8 0-16 7.2-16 16l0 96c0 8.8 7.2 16 16 16s16-7.2 16-16l0-96c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 96c0 8.8 7.2 16 16 16s16-7.2 16-16l0-96z"/></symbol><symbol id="fa-forward" viewBox="0 0 512 512"><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416L0 96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3l0 41.7 0 41.7L52.5 440.6zM256 352l0-96 0-128 0-32c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29l0-64z"/></symbol><symbol id="fa-arrow-left" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></symbol><symbol id="fa-phone" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></symbol><symbol id="fa-location-dot" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></symbol><symbol id="fa-envelope" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></symbol><symbol id="fa-trash-can" viewBox="0 0 448 512"><path d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z"/></symbol><symbol id="fa-right-from-bracket" viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></symbol><symbol id="fa-rotate-right" viewBox="0 0 512 512"><path d="M463.5 224l8.5 0c13.3 0 24-10.7 24-24l0-128c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8l119.5 0z"/></symbol></svg>
+<noscript><p style="padding:24px;font-family:sans-serif;">This kiosk needs JavaScript. Please turn it on and reload the page.</p></noscript>
+
+<div id="app" data-chrome="on">
+  <main id="screens">
+
+    <!-- ============ HOME: SIGN UP / LOG IN ============ -->
+    <section class="screen active" id="screen-home" aria-labelledby="homeTitle">
+      <div class="brand-mark">
+        <img src="assets/logo.png" width="168" height="auto" alt="Besta — The Indian Kitchen logo">
+        <h1 class="visually-hidden" id="homeTitle">Besta — The Indian Kitchen</h1>
+      </div>
+
+      <div class="panel" style="margin-top:20px;">
+        <h2 id="authHeading">Play while you wait</h2>
+        <p class="muted">Create your account with Google to save your results, join the leaderboard and get coupons and offers from Besta. Already signed up? Log in to see your saved results.</p>
+
+        <div class="tabs" id="authTabs" role="tablist" aria-label="Sign up or log in">
+          <button type="button" role="tab" class="tab" id="tabSignup" aria-selected="true" aria-controls="panelSignup">Sign up</button>
+          <button type="button" role="tab" class="tab" id="tabLogin" aria-selected="false" aria-controls="panelLogin" tabindex="-1">Log in</button>
+        </div>
+
+        <div id="panelSignup" role="tabpanel" aria-labelledby="tabSignup">
+          <p class="notice">
+            Besta receives your <strong>name and email address</strong> from Google. We use them only to save your game results and to show your first name and last initial on the leaderboard.
+            We never receive your Google password. <a href="privacy.html" data-legal="Privacy Policy">Privacy Policy</a>
+          </p>
+          <div class="check-row">
+            <input type="checkbox" id="ageCheck">
+            <label for="ageCheck">I am 18 years old or older.</label>
+          </div>
+          <div class="check-row">
+            <input type="checkbox" id="consentCheck">
+            <label for="consentCheck">I agree to Besta using my Google name and email for the purpose above. I can withdraw this at any time by emailing hello@besta.co.in or by choosing “Delete my data”.</label>
+          </div>
+          <p id="signupHint" class="notice" role="status" aria-live="polite"></p>
+          <div class="google-wrap locked" id="googleWrapSignup" aria-disabled="true">
+            <span class="skeleton google-skeleton" id="googleSkeletonSignup"></span>
+            <div id="googleBtnSignup"></div>
+          </div>
+          <p id="signupMsg" class="msg" role="alert"></p>
+        </div>
+
+        <div id="panelLogin" role="tabpanel" aria-labelledby="tabLogin" hidden>
+          <p class="notice">Log in with the Google account you used to sign up. We will show your saved results.</p>
+          <div class="google-wrap" id="googleWrapLogin">
+            <span class="skeleton google-skeleton" id="googleSkeletonLogin"></span>
+            <div id="googleBtnLogin"></div>
+          </div>
+          <p id="loginMsg" class="msg" role="alert"></p>
+          <button type="button" class="btn btn-ghost" id="toSignupBtn" hidden>Sign up with this Google account</button>
+        </div>
+
+        <p id="authUnavailable" class="msg error" role="alert" hidden>Sign-in is not available right now. Please ask a member of staff.</p>
+      </div>
+
+      <section class="panel lb-card" aria-labelledby="homeLbTitle">
+        <h2 id="homeLbTitle" style="font-size:20px;">Fastest times</h2>
+        <p class="muted" style="margin-bottom:8px;">Table Time leaderboard</p>
+        <div id="homeLb" aria-live="polite"></div>
+      </section>
+      <p class="visit-us"><strong>Visit us:</strong> Besta — The Indian Kitchen, Beside DBS Bank, Kanaka Durga Gazetted Officers Colony, Guru Nanak Colony, Vijayawada</p>
+    </section>
+
+    <!-- ============ UPDATED POLICY: ASK AGAIN ============ -->
+    <section class="screen" id="screen-reconsent" aria-labelledby="reconsentTitle">
+      <div class="panel">
+        <h2 id="reconsentTitle">We have updated our Privacy Policy</h2>
+        <p class="notice">Before you continue, please confirm the following. <a href="privacy.html" data-legal="Privacy Policy">Read the Privacy Policy</a></p>
+        <div class="check-row"><input type="checkbox" id="rcAge"><label for="rcAge">I am 18 years old or older.</label></div>
+        <div class="check-row"><input type="checkbox" id="rcConsent"><label for="rcConsent">I agree to Besta using my Google name and email as described in the updated Privacy Policy.</label></div>
+        <p id="reconsentMsg" class="msg" role="alert"></p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-primary" id="reconsentBtn">Continue</button>
+          <button type="button" class="btn btn-ghost" id="reconsentCancelBtn">Log out</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFERS (optional) ============ -->
+    <section class="screen" id="screen-offers" aria-labelledby="offersTitle">
+      <div class="panel">
+        <h2 id="offersTitle"><svg class="fa" aria-hidden="true"><use href="#fa-gift"/></svg> Coupons and offers</h2>
+        <p class="notice">Share your mobile number to receive coupons, discounts and dine-in offers from Besta. This is optional and does not affect playing.</p>
+        <label class="field-label" for="offersPhone">Mobile number</label>
+        <p class="field-hint" id="phoneHint">10-digit Indian mobile number</p>
+        <input type="tel" inputmode="numeric" class="field-input" id="offersPhone" maxlength="16" autocomplete="off" aria-describedby="phoneHint offersMsg">
+        <div class="check-row">
+          <input type="checkbox" id="offersConsent">
+          <label for="offersConsent">I agree to receive coupons, offers and updates from Besta by call, SMS or WhatsApp on this number. I can stop at any time by emailing hello@besta.co.in.</label>
+        </div>
+        <p class="notice">Besta will never ask for your password, OTP, Aadhaar or PAN. <a href="privacy.html" data-legal="Privacy Policy">Privacy Policy</a></p>
+        <p id="offersMsg" class="msg" role="alert"></p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-gold" id="offersSaveBtn">Save my number</button>
+          <button type="button" class="btn btn-ghost" id="offersSkipBtn">No thanks</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAME PICKER ============ -->
+    <section class="screen" id="screen-picker" aria-labelledby="pickerTitle">
+      <p class="label-track" id="pickerGreeting">Welcome</p>
+      <h1 id="pickerTitle" style="margin-bottom:6px;">Choose a game</h1>
+      <p class="results-strip" id="myResults" aria-live="polite"></p>
+      <div class="game-grid" id="gameGrid"></div>
+      <section class="panel lb-card" aria-labelledby="pickerLbTitle">
+        <h2 id="pickerLbTitle" style="font-size:20px;">Fastest times</h2>
+        <p class="muted" style="margin-bottom:8px;">Table Time leaderboard</p>
+        <div id="pickerLb" aria-live="polite"></div>
+      </section>
+      <div class="picker-actions">
+        <button type="button" class="btn-text" id="offersBtn"><svg class="fa" aria-hidden="true"><use href="#fa-gift"/></svg>Coupons and offers</button>
+        <button type="button" class="btn-text" id="deleteBtn"><svg class="fa" aria-hidden="true"><use href="#fa-trash-can"/></svg>Delete my data</button>
+        <button type="button" class="btn-text" id="signOutBtn"><svg class="fa" aria-hidden="true"><use href="#fa-right-from-bracket"/></svg>Log out</button>
+      </div>
+    </section>
+
+    <!-- ============ DELETE MY DATA ============ -->
+    <section class="screen" id="screen-delete" aria-labelledby="deleteTitle">
+      <div class="panel">
+        <h2 id="deleteTitle">Delete my data</h2>
+        <p>This permanently deletes your name, email address, mobile number, consent records and game results from Besta’s records. It cannot be undone.</p>
+        <p class="notice">You can also ask us by email at <a href="mailto:hello@besta.co.in?subject=Delete%20my%20data">hello@besta.co.in</a>.</p>
+        <p id="deleteMsg" class="msg" role="alert"></p>
+        <div class="btn-row">
+          <button type="button" class="btn btn-danger" id="deleteConfirmBtn">Yes, delete my data</button>
+          <button type="button" class="btn btn-ghost" id="deleteCancelBtn">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TABLE TIME ============ -->
+    <section class="screen" id="screen-tt-capture" aria-labelledby="ttCaptureTitle">
+      <div class="panel" style="text-align:center;">
+        <p class="label-track">Table Time</p>
+        <h2 id="ttCaptureTitle">Take your photo</h2>
+        <p class="notice">Your photo is turned into a puzzle on this device. It is never uploaded or saved, and it is erased when you leave the game.</p>
+        <p id="ttCaptureMsg" class="msg" role="alert"></p>
+        <button type="button" class="btn btn-primary btn-block" id="ttTakePhotoBtn"><svg class="fa" aria-hidden="true"><use href="#fa-camera"/></svg>Take your photo</button>
+        <button type="button" class="btn btn-ghost btn-block" id="ttGalleryBtn" style="margin-top:10px;"><svg class="fa" aria-hidden="true"><use href="#fa-image"/></svg>Choose from gallery</button>
+        <input type="file" id="ttGalleryInput" accept="image/*" hidden>
+        <input type="file" id="ttCameraInput" accept="image/*" capture="user" hidden>
+      </div>
+      <button type="button" class="btn-text" id="ttBackBtn1" style="margin-top:10px;"><svg class="fa" aria-hidden="true"><use href="#fa-arrow-left"/></svg>Back to games</button>
+    </section>
+
+    <section class="screen" id="screen-tt-puzzle" aria-labelledby="ttPuzzleTitle">
+      <h1 class="visually-hidden" id="ttPuzzleTitle">Table Time puzzle</h1>
+      <div class="puzzle-header">
+        <div class="timer" id="ttTimerLabel" role="timer" aria-label="Elapsed time">0:00</div>
+        <button type="button" class="btn-text" id="ttPeekBtn" aria-pressed="false"><svg class="fa" aria-hidden="true"><use href="#fa-eye"/></svg>Show original</button>
+      </div>
+      <div id="ttBoardWrap"><div id="ttBoard" role="group" aria-label="Puzzle board, 5 by 5 tiles"></div></div>
+      <p class="notice" style="margin-top:12px; text-align:center;">Tap a tile to pick it up, then tap another tile to swap places.</p>
+      <div id="ttStatus" class="visually-hidden" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="screen" id="screen-tt-tutorial" aria-labelledby="ttTutTitle">
+      <div class="panel" style="text-align:center;">
+        <p class="label-track" id="ttTutLabel">Step 1 of 3</p>
+        <h2 id="ttTutTitle" style="font-size:20px; margin:8px 0; min-height:3.6em;"><span id="ttTutText"></span></h2>
+        <div id="ttTutDemo" class="tut-demo" aria-hidden="true">
+          <div class="tut-hand"><svg class="fa" aria-hidden="true"><use href="#fa-hand-pointer"/></svg></div>
+          <div class="tut-tile a"></div>
+          <div class="tut-tile b"></div>
+        </div>
+        <div class="btn-row" style="margin-top:12px;">
+          <button type="button" class="btn btn-ghost" id="ttTutSkipBtn">Skip <svg class="fa after" aria-hidden="true"><use href="#fa-forward"/></svg></button>
+          <button type="button" class="btn btn-primary" id="ttTutNextBtn">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-tt-win" aria-labelledby="ttWinTitle">
+      <div class="panel" style="text-align:center;">
+        <p class="label-track">Table Time</p>
+        <h2 id="ttWinTitle">Solved!</h2>
+        <p id="ttWinTimeLabel" style="font-size:18px; font-weight:700; margin-bottom:6px;"></p>
+        <div id="ttSaveStatus" role="status" aria-live="polite" style="min-height:2.6em; margin-bottom:12px;"></div>
+        <button type="button" class="btn btn-primary btn-block" id="ttViewLeaderboardBtn"><svg class="fa" aria-hidden="true"><use href="#fa-trophy"/></svg>View fastest times</button>
+        <button type="button" class="btn btn-ghost btn-block" id="ttAgainBtn" style="margin-top:10px;"><svg class="fa" aria-hidden="true"><use href="#fa-rotate-right"/></svg>Play again</button>
+        <button type="button" class="btn-text" id="ttBackBtn2" style="margin-top:8px;"><svg class="fa" aria-hidden="true"><use href="#fa-arrow-left"/></svg>Back to games</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-tt-leaderboard" aria-labelledby="ttLbTitle">
+      <div class="panel">
+        <p class="label-track">Table Time</p>
+        <h2 id="ttLbTitle" style="margin-bottom:12px;">Fastest times</h2>
+        <div id="ttLbList" aria-live="polite"></div>
+        <button type="button" class="btn btn-primary btn-block" id="ttBackBtn3" style="margin-top:16px;"><svg class="fa" aria-hidden="true"><use href="#fa-arrow-left"/></svg>Back to games</button>
+      </div>
+    </section>
+
+    <!-- ============ DASARA ARCADE ============ -->
+    <section class="screen" id="screen-durga" aria-label="Dasara Arcade">
+      <div class="durga-bar">
+        <button type="button" class="btn-text" id="durgaBackBtn"><svg class="fa" aria-hidden="true"><use href="#fa-arrow-left"/></svg>Back to games</button>
+        <span class="label-track">Dasara Arcade</span>
+        <span style="width:96px;" aria-hidden="true"></span>
+      </div>
+      <div class="durga-stage">
+        <iframe id="durgaFrame" title="Dasara Arcade — Durga Maa vs Asuras" allow="autoplay"></iframe>
+        <div id="durgaStatus" class="durga-status" role="status">
+          <span class="skeleton" style="width:180px;height:22px;"></span>
+          <span class="skeleton" style="width:240px;height:120px;"></span>
+          <span id="durgaStatusText">Loading Dasara Arcade…</span>
+          <button type="button" class="btn btn-ghost" id="durgaRetryBtn" hidden>Try again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POLICY VIEWER ============ -->
+    <section class="screen" id="screen-legal" aria-label="Policy" style="padding:0;align-items:stretch;">
+      <div class="durga-bar">
+        <button type="button" class="btn-text" id="legalBackBtn"><svg class="fa" aria-hidden="true"><use href="#fa-arrow-left"/></svg>Back</button>
+        <span class="label-track" id="legalTitle"></span>
+        <span style="width:96px;" aria-hidden="true"></span>
+      </div>
+      <div class="durga-stage"><iframe id="legalFrame" title="Policy"></iframe></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-links" aria-label="Policies">
+      <a href="privacy.html" data-legal="Privacy Policy">Privacy Policy</a>
+      <a href="terms.html" data-legal="Terms of Service">Terms of Service</a>
+      <a href="cookies.html" data-legal="Cookie Policy">Cookie Policy</a>
+      <a href="licenses.html" data-legal="Licences">Licences</a>
+      <button type="button" class="link" id="cookieSettingsBtn">Cookie settings</button>
+    </nav>
+    <address id="footerAddress">
+      Besta — The Indian Kitchen, Beside DBS Bank, Kanaka Durga Gazetted Officers Colony, Guru Nanak Colony, Vijayawada ·
+      <a href="mailto:hello@besta.co.in">hello@besta.co.in</a>
+    </address>
+  </footer>
+</div>
+
+<div class="cta-bar" id="ctaBar" aria-label="Contact Besta"></div>
+
+<!-- Camera for Table Time -->
+<div id="ttCameraOverlay" class="cam-overlay" role="dialog" aria-modal="true" aria-label="Take your photo">
+  <video id="ttCameraVideo" autoplay playsinline muted aria-label="Live camera preview"></video>
+  <p class="cam-note">Centre your face in the frame, then press the round button. The photo stays on this device.</p>
+  <div class="cam-actions">
+    <button type="button" class="btn btn-ghost" id="ttCamCancelBtn">Cancel</button>
+    <button type="button" class="shutter-btn" id="ttCamShutterBtn" aria-label="Take photo"></button>
+  </div>
+</div>
+<div id="ttPeekBackdrop" class="peek-backdrop"></div>
+<div id="ttPeekThumb" class="peek-thumb" role="img" aria-label="Your original photo"></div>
+
+<!-- Cookie banner and settings -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-labelledby="cbTitle" aria-describedby="cbText" hidden>
+  <h2 id="cbTitle">Cookies and similar storage</h2>
+  <p id="cbText">
+    We use essential storage to make this site work. With your permission we also remember your best Dasara Arcade score on this device.
+    Signing in uses Google, which may set its own cookies. <a href="cookies.html" data-legal="Cookie Policy">Cookie Policy</a>
+  </p>
+  <div class="btn-row">
+    <button type="button" class="btn" id="cookieRejectBtn">Reject optional</button>
+    <button type="button" class="btn" id="cookieCustomiseBtn">Customise</button>
+    <button type="button" class="btn" id="cookieAcceptBtn">Accept all</button>
+  </div>
+</div>
+
+<div id="cookieModal" class="modal-backdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cmTitle">
+    <h2 id="cmTitle">Cookie settings</h2>
+    <p class="notice">Choose which optional storage you allow. You can change this at any time from “Cookie settings” at the bottom of the page.</p>
+    <div class="switch-row">
+      <div><strong>Strictly necessary</strong><p>Remembers this choice and makes the site work. Always on.</p></div>
+      <input type="checkbox" checked disabled aria-label="Strictly necessary, always on">
+    </div>
+    <div class="switch-row">
+      <div><strong><label for="cookieFunctional">Functional</label></strong><p>Remembers your best Dasara Arcade score on this device.</p></div>
+      <input type="checkbox" id="cookieFunctional">
+    </div>
+    <div class="switch-row info">
+      <div><strong>Google sign-in</strong><p>The sign-in buttons are provided by Google, which may set its own cookies when the page loads them. This is part of the sign-in service and is not controlled here. <a href="cookies.html" data-legal="Cookie Policy">Cookie Policy</a></p></div>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn btn-ghost" id="cmRejectBtn">Reject optional</button>
+      <button type="button" class="btn btn-ghost" id="cmSaveBtn">Save my choices</button>
+      <button type="button" class="btn btn-ghost" id="cmAcceptBtn">Accept all</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<!-- Animated logo intro (first screen) -->
+<div id="intro" role="img" aria-label="Besta — The Indian Kitchen">
+  <div class="stage" id="st" aria-hidden="true"></div>
+  <button id="go" type="button" aria-label="Enter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6"/></svg></button>
+</div>
+
+<script src="config.js"></script>
+<script src="consent.js"></script>
+<script src="app.js"></script>
+<script src="games/table-time.js"></script>
+<script src="games/dasara-arcade.js"></script>
+<script src="intro.js"></script>
+</body>
+</html>
